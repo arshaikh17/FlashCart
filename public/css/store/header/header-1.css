@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans:300,400,700,900');
+
+.fixed-header-area{
+  display:none;
+}
+.fixed-header-area.sticky {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+  left: 0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+ 
+/*----------------------------------------*/
+/*  2.2  fixed-header-area
+/*----------------------------------------*/
+.fixed-header-area .logo {
+  margin-top: 9px;
+}
+.fixed-header-area .mean-menu-area .mean-menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.fixed-header-area .mean-menu-area .mean-menu ul li a {
+  color: #000;
+}
+.fixed-header-area .mean-menu ul li > ul.mega-menu {
+  left: -183px;
+  width: 148%;
+  top:140%;
+}
+.fixed-header-area .mean-menu ul li > ul.mega-menu2 {
+  left: 22px;
+  width: 280px;
+}
+.fixed-header-area .cart-total {
+  margin-top: 18px;
+}
+.fixed-header-area .mean-menu-area .mean-menu ul li  ul.mega-menu li a,.fixed-header-area .mean-menu-area .mean-menu ul li  ul.sub-menu li a,.fixed-header-area .mean-menu-area .mean-menu ul li  ul.sub-menu li ul.sub-menu2 li a {
+  color: #333;
+}
+.fixed-header-area .mean-menu ul li:hover > ul.mega-menu,.fixed-header-area .mean-menu ul li:hover ul.sub-menu {
+  top: 117%;
+}
+.fixed-header-area .mean-menu ul li:hover ul.sub-menu li ul.sub-menu2{
+  top:0;
+}
+/*----------------------------------------*/
+/*  2.3  header-top-area
+/*----------------------------------------*/
+.header-top-area {
+  border-bottom: 1px solid #EFEFEF;
+}
+.social-icon ul li {
+  display: inline-block;
+}
+.social-icon ul li a {
+  color: #aaa;
+  font-size: 14px;
+  margin-right: 15px;
+  transition:.3s;
+}
+.social-icon ul li a:hover{
+  color:#59b210;
+}
+.header-account ul li {
+  display: inline-block;
+  position:relative;
+  margin-right: 12px;
+}
+.header-account ul li::before {
+  background: #aaa none repeat scroll 0 0;
+  content: "";
+  height: 14px;
+  position: absolute;
+  right: -8px;
+  top: 12%;
+  width: 1px;
+}
+.header-account ul li:last-child::before{
+  display:none;
+}
+.header-account ul li a {
+  color: #333;
+}
+.header-account ul li:last-child{
+  margin-right:0;
+}
+.header-account ul li a i {
+  font-size: 16px;
+  margin-right: 6px;
+}
+.header-account ul li a:hover{
+  color:#59b210;
+}
+/*----------------------------------------*/
+/*  2.4  header-mid-area
+/*----------------------------------------*/
+.header-search form {
+  border-bottom: 1px solid #efefef;
+  width: 80%;
+}
+.header-search form i {
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.header-search form input {
+  border: medium none;
+  color: #4d4d4d;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.cart-total {
+  margin-top: 10px;
+}
+.cart-total ul{
+  display:inline-block;
+}
+.cart-total ul li {
+  display: inline-block;
+  position:relative;
+}
+.cart-total ul li a i {
+  color: #333;
+  font-size: 18px;
+}
+.cart-total ul li a span.product-number {
+  color: #333;
+  margin: 0 4px;
+  transition:.3s;
+}
+.cart-total ul li a span.product-number:hover{
+  color:#59b210;
+}
+.cart-total ul li a span.cart-count {
+  color:#59b210;
+}
+.shopping-cart {
+  background: #222222 none repeat scroll 0 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  left: -165px;
+  opacity: 0;
+  padding: 26px 10px;
+  position: absolute;
+  top: 150%;
+  transition: all 0.3s ease 0s;
+  width: 300px;
+  z-index: 9999999999;
+  visibility:hidden;
+  transition:.3s;
+}
+.cart-total ul.cart-menu:hover li .shopping-cart{
+  opacity:1;
+  top:100%;
+  visibility:visible;
+}
+.shopping-cart .cart-list {
+  border-top: 1px solid #aaa;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.shopping-cart .cart-list .cart-img {
+  float: left;
+  width: 30%;
+}
+.shopping-cart .cart-list .cart-info {
+  float: left;
+  text-align: left;
+  width: 60%;
+  padding-left: 10px;
+}
+.shopping-cart .cart-list .cart-info h4 {
+  margin-bottom:0;
+}
+.shopping-cart .cart-list .cart-info h4 a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.shopping-cart .cart-list .cart-info .cart-price span {
+  color: #fff;
+  font-size: 16px;
+}
+.shopping-cart .cart-list .cart-info .cart-price span.price {
+  font-size: 18px;
+}
+.shopping-cart .cart-list .pro-del {
+  float: left;
+  width: 10%;
+}
+.shopping-cart .cart-list .pro-del a i {
+  color: #fff;
+  font-size: 17px;
+}
+.shopping-cart .mini-cart-total {
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.shopping-cart .mini-cart-total span {
+  color: #fff;
+  float: left;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.shopping-cart .mini-cart-total span.total-price {
+  float: right;
+  font-size: 17px;
+}
+.shopping-cart .cart-button {
+  padding: 20px 0;
+}
+.shopping-cart .cart-button a{
+  background: #fff;
+  float:left;
+  color:#333;
+}
+.shopping-cart .cart-button a:hover{
+  background:#666666;
+  color:#fff;
+}
+.shopping-cart .cart-button a.right,.shopping-cart .cart-button a {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.shopping-cart .cart-button a.right{
+  background: #666666;
+  float: right;
+  color:#fff;
+}
+.shopping-cart .cart-button a.right:hover{
+  background:#fff;
+  color:#333;
+}
+/*----------------------------------------*/
+/*  2.5  mean-menu-area
+/*----------------------------------------*/
+.mean-menu {
+  background: #333333 none repeat scroll 0 0;
+}
+.mean-menu ul li {
+  display: inline-block;
+  position:relative;
+}
+.mean-menu ul li > a {
+  color: #eeeeee;
+  display: block;
+  font-family: Open Sans;
+  font-size: 15px;
+  padding: 18px 16px 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.mean-menu ul li:hover > a,.fixed-header-area .mean-menu-area .mean-menu ul li:hover a,.fixed-header-area .mean-menu-area .mean-menu ul li  ul.mega-menu li a:hover,.fixed-header-area .mean-menu-area .mean-menu ul li  ul.sub-menu li:hover a,.fixed-header-area .mean-menu-area .mean-menu ul li  ul.sub-menu li ul.sub-menu2 li a:hover {
+  color:#59b210;
+}
+.mean-menu ul li a i {
+  margin-left: 5px;
+}
+/*----------------------------------------*/
+/*  2.6.1  sub-menu
+/*----------------------------------------*/
+.mean-menu ul li ul.sub-menu {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  left: 0;
+  opacity: 0;
+  padding: 15px 0;
+  position: absolute;
+  top: 135%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 190px;
+  z-index: -999;
+}
+.mean-menu ul li:hover ul.sub-menu{
+  opacity:1;
+  visibility:visible;
+  top:100%;
+  z-index:999;
+}
+.mean-menu ul li ul.sub-menu li{
+  position:relative;
+  display:block;
+}
+.mean-menu ul li ul.sub-menu li a {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 22px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  text-transform: capitalize;
+}
+.mean-menu ul li ul.sub-menu li:hover a,.mean-menu ul li ul.sub-menu li > ul.sub-menu2 li a:hover{
+  color:#59b210;
+}
+.mean-menu ul li ul.sub-menu li a i {
+  font-size: 15px;
+  padding-left: 80px;
+}
+.mean-menu ul li ul.sub-menu li > ul.sub-menu2 {
+  left: 90%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:.3s;
+}
+.mean-menu ul li ul.sub-menu li:hover > ul.sub-menu2{
+  opacity:1;
+  visibility:visible;
+  left:100%;
+}
+.mean-menu ul li ul.sub-menu li > ul.sub-menu2 li a{
+  color: #333;
+}
+/*----------------------------------------*/
+/*  2.7.2  mega-menu
+/*----------------------------------------*/
+.mean-menu ul li.static {
+  position: static;
+}
+.mean-menu ul li > ul.mega-menu {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  left: 0;
+  padding: 20px 0;
+  position: absolute;
+  top: 114%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  transition:.3s;
+}
+.mean-menu ul li > ul.mega-menu2 {
+  left: 22px;
+  width: 280px;
+}
+.mean-menu ul li:hover > ul.mega-menu {
+  opacity:1;
+  visibility:visible;
+  top:100%;
+}
+.mean-menu ul li > ul.mega-menu li {
+  float: left;
+  width: 25%;
+  padding: 0 40px;
+}
+.mean-menu ul li > ul.mega-menu2 li {
+  width: 50%;
+  padding: 0 20px;
+}
+.mean-menu ul li > ul.mega-menu li a {
+  color: #333;
+  display: block;
+  font-family: Open Sans;
+  font-size: 13px;
+  padding: 5px 0;
+  position: relative;
+  text-align: left;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+}
+.mean-menu ul li > ul.mega-menu li a span {
+  border: 1px solid #aaa;
+  border-radius: 18px;
+  color: #59b210;
+  font-size: 12px;
+  left:50%;
+  padding: 0 10px;
+  position: absolute;
+  top: -7px;
+  text-transform:uppercase;
+}
+.mean-menu ul li > ul.mega-menu li a span.color {
+  color: #f5ae58;
+  left: 65%;
+}
+.mean-menu ul li > ul.mega-menu li a span.color2 {
+  color: #ff3d49;
+  left: 60%;
+  top: -2px;
+}
+.mean-menu ul li > ul.mega-menu li a span.color3 {
+  color: #ff3d49;
+  left: 40%;
+  top: -1px;
+}
+.mean-menu ul li > ul.mega-menu li a:hover  span.color {
+  border-color:#f5ae58;
+}
+.mean-menu ul li > ul.mega-menu li a:hover span.color2{
+  border-color:#FF3D49;
+}
+.mean-menu ul li > ul.mega-menu li a:hover span.color3{
+  border-color:#ff3d49;
+}
+.mean-menu ul li > ul.mega-menu li a.title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 12px 0;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.mean-menu ul li > ul.mega-menu li a.title::before {
+  background: #aaa none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 40%;
+}
+.mean-menu ul li > ul.mega-menu li a:hover{
+  color:#59b210;
+  padding-left:5px;
+}
+.mean-menu ul li > ul.mega-menu li a:hover span{
+  border-color:#59b210;
+}
+.mean-menu ul li > ul.mega-menu li a.title:hover{
+  padding-left:0;
+}
+.mean-menu ul li > ul.mega-menu li a:first-child:hover{
+  padding-left:0;
+}
+.mean-menu ul li > ul.mega-menu2 li a:first-child:hover{
+  padding-left:5px;
+}
+.mean-menu ul li > ul.mega-menu li a img{}

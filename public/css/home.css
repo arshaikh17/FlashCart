@@ -1,0 +1,75 @@
+nav, body
+{
+	font-family: Open Sans;
+}
+.content
+{
+	padding:0.01em 16px;
+}
+.shadow
+{
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+	border-radius:4px!important;
+	color:#000;
+	background-color:#fff;
+}
+.center
+{
+	text-align: center;
+}
+.row_stores
+{
+	padding:0 8px;
+}
+.row_stores:after,.row_stores:before
+{
+	content:"";display:table;clear:both;
+}
+@media (min-width:601px){
+.store_button
+{ 
+	width: 33.33333%;
+	float: left;
+	height: 120px;
+	min-height: 120px;
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+}}
+.notification_bell
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.store_name
+{
+	margin-top: 65px;
+	margin-left: 10px;
+
+}
+.personal
+{
+	background-color: #12A8E0;
+}
+.personal:hover
+{
+	background-color: #0050A0;
+	color: white;
+}
+.employeed
+{
+	background-color: #E5002B;	
+	color: white;
+}
+.employeed:hover
+{
+	background-color: red;	
+	color: white;
+}
+.badge
+{
+	background-color: transparent !important;
+}

@@ -1,0 +1,53 @@
+
+/* USER LIST TABLE */
+.user-list img {
+    position: relative;
+	max-width: 50px;
+	float: left;
+	margin-right: 15px;
+}
+.user-list .user-link {
+	display: block;
+	font-size: 1.25em;
+	padding-top: 3px;
+	margin-left: 60px;
+}
+.user-list .user-subhead {
+	font-size: 0.875em;
+	font-style: italic;
+}
+.conversation-list .conversation-link {
+	display: block;
+	font-size: 1.25em;
+	padding-top: 3px;
+}
+
+/* TABLES */
+.table {
+    border-collapse: separate;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+	background-color: #eee;
+}
+.table thead > tr > th {
+	border-bottom: 1px solid #C2C2C2;
+	padding-bottom: 0;
+}
+.table tbody > tr > td {
+	font-size: 0.875em;
+	background: #f5f5f5;
+	border-top: 10px solid #fff;
+	vertical-align: middle;
+	padding: 12px 8px;
+}
+.active-td
+{
+	background-color: #72cbff !important;
+}
+.active-td a, 
+.active-td p,
+.active-td span
+{
+	color: black;
+} 

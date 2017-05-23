@@ -1,0 +1,4 @@
+161013 22:56:54 [Note] \bin\mysqld-opt.exe: ready for connections.
+Version: '5.0.67-community-nt'  socket: ''  port: 3311  MySQL Community Edition (GPL)
+161013 22:56:54 [ERROR] mysqld: Got error 10038 from select
+161013 23:14:56 [ERROR] mysqld: Got error 10038 from select

@@ -1,0 +1,35 @@
+.log_box
+{
+	margin-top: 20px;
+	background-color: lightgrey;
+}
+.log_table
+{
+	border-spacing: 0 20px; 
+}
+.log_box_body
+{
+	max-height: 80%;
+	overflow: scroll;
+}
+.log_contents
+{
+	
+	margin-top: 15px;
+	margin-left: 15px;
+	padding-bottom: 15px;
+}
+.log_left
+{
+	background-color: white;
+	width: 70%;
+	border-width: 1px;
+   	border-bottom: 1px blue solid;
+}
+.log_right
+{
+	background-color: white;
+	width: 30%;
+	border-width: 1px;
+   	border-bottom: 1px blue solid;
+}

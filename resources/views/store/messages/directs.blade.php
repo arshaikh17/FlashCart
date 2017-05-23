@@ -1,0 +1,236 @@
+@extends('layouts.store', ['store'=>$store])
+
+@section('store-view')
+Home
+@endsection
+@section('store-subview')
+Dashboard
+@endsection
+
+@section('store-breadcrumb')
+<a href="/store/"><li>Dashboard</li></a>
+<li>Direct Messages</li>
+@endsection
+
+@section('store-alertcontent')
+@if($errors->any())
+  <div class="container">
+    <div class="alert alert-warning alert-dismissable">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>NOTE!</strong>  
+        {!! $errors->first('check') !!}
+    </div>
+  </div>
+  @section('css')
+  <style>
+    .check{
+  color:red;
+  background:red;
+  border-radius:50%;
+  animation:op 3s ease infinite;
+}
+@keyframes op{
+0%{
+  opacity:0;
+}
+50%{
+  opacity:1;
+}
+100%{
+  opacity:0;
+}
+}
+  </style>
+  @endsection
+  @endif
+@endsection
+@section('store-successcontent')
+@if(session()->has('message'))
+  <div class="container">
+    <div class="alert alert-success alert-dismissable">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>SUCCESS!</strong>  
+        {!! session()->get('message') !!}
+    </div>
+  </div>
+  @section('css')
+  <style>
+    .success{
+  color:green;
+  background:green;
+  border-radius:50%;
+  animation:op 3s ease infinite;
+}
+@keyframes op{
+0%{
+  opacity:0;
+}
+50%{
+  opacity:1;
+}
+100%{
+  opacity:0;
+}
+}
+  </style>
+  @endsection
+  @endif
+@endsection
+
+@section('store-content')
+<section class="col-lg-12">
+ @forelse(array_chunk($get_message_users->all(), 3) as $row)
+  <div class="row">
+    @foreach($row as $message)
+    <?php
+    $user = returnUser($message->message_to);
+    $last_message = "";
+    ?>
+    @if($message->message_from != 0)
+    <div class="col-md-5 col-lg-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="panel panel-primary">
+              <div class="panel-heading" id="accordion">
+                <span class="glyphicon glyphicon-comment"></span> {{ $user->name }}
+                <div class="btn-group pull-right">
+                  <a type="button" class="btn btn-default btn-xs viewer_button_store_p" id="{{ $message->message_to }}" data-toggle="collapse" data-parent="#accordion" href="#chat_{{ $message->message_to }}">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="panel-collapse collapse" id="chat_{{ $message->message_to }}">
+                <div class="panel-body">
+                  <ul class="chat">
+                    @foreach($get_messages as $get_message)
+                    @if($get_message->message_to == $message->message_to)
+                    @if($get_message->user_type == 2)
+                    <li class="left clearfix"><span class="chat-img pull-left">
+                      <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                    </span>
+                    <div class="chat-body clearfix">
+                      <div class="header">
+                        <strong class="primary-font">{{session('store_name')}}</strong> <small class="pull-right text-muted">
+                        <span class="glyphicon glyphicon-time"></span>{{$get_message->created_at->diffForHumans()}}</small>
+                      </div>
+                      <p>
+                        {{$get_message->message_text}}
+                      </p>
+                    </div>
+                  </li>
+                  <?php $last_message = $get_message->message_id; ?>
+                  @elseif($get_message->user_type == 1)
+                  <li class="right clearfix"><span class="chat-img pull-right">
+                    <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+                  </span>
+                  <div class="chat-body clearfix">
+                    <div class="header">
+                      <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>{{$get_message->created_at->diffForHumans()}}</small>
+                      <strong class="pull-right primary-font">{{ $user->name }}</strong>
+                    </div>
+                    <p>
+                      {{$get_message->message_text}}
+                    </p>
+                  </div>
+                </li>
+                <?php $last_message = $get_message->message_id; ?>
+                @endif
+                @endif
+                @endforeach
+              </ul>
+            </div>
+            <div class="panel-footer">
+              <form method="POST" action="/store/messages/send_message">
+              {{csrf_field()}}
+              <div class="input-group">
+                <input type="text" name="last_message" value="{{ $last_message }}" class="hidden" />
+                <input type="text" name="message_to" value="{{ $message->message_to }}" class="hidden">
+                <input id="btn-input" name="message" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                <span class="input-group-btn">
+                  <button class="btn btn-warning btn-sm" type="submit" id="btn-chat">
+                  Send</button>
+                </span>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endif
+@endforeach
+</div>
+@empty
+No chats, yet.
+@endforelse
+</section>
+<style>
+  a:hover
+  {
+    text-decoration: none !important;
+  }
+  .chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 250px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+</style>
+@endsection

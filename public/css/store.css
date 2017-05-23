@@ -1,0 +1,39 @@
+ul
+{
+	list-style: none;
+}
+.right-nav
+{
+	margin-left: 10px; 
+}
+.action_td
+{
+
+}
+.select_default
+{
+	background-color: grey;
+}
+.non_link_type:hover
+{
+	text-decoration: none;
+}
+.proposal
+{
+	display: none;
+	overflow: scroll;
+	/*white-space: normal;*/
+}
+.view_proposal
+{
+	margin-top: 5px;
+}
+.view_proposal_anchor:hover
+{
+	text-decoration: none;
+	
+}
+#emp_form
+{
+	display: none;
+}

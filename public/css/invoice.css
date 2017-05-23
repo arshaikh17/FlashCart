@@ -1,0 +1,60 @@
+body
+{
+	font-family: Open Sans;
+}
+
+.invoice-container
+{
+	margin-top: 5%;
+	background-color: pink;
+}
+.invoice
+{
+	background-color: white;
+	-webkit-box-shadow: 0px 2px 10px 3px rgba(179,175,179,0.34);
+	-moz-box-shadow: 0px 2px 10px 3px rgba(179,175,179,0.34);
+	box-shadow: 0px 2px 10px 3px rgba(179,175,179,0.34);
+}
+.invoice-header
+{
+	margin-top: 10px;
+}
+.invoice-body
+{
+	margin-top: 10px;
+}
+.invoice-footer
+{
+	margin-top: 10px;
+}
+
+
+
+
+.address
+{
+	margin-top: 20px;
+}
+.total
+{
+	margin-right: 40px;
+}
+
+
+
+
+
+.align-right
+{
+	direction:rtl;
+    text-align:justify;
+}
+.align-left
+{
+	direction:ltr;
+    text-align:justify;
+}
+.italic
+{
+	font-style: italic;
+}

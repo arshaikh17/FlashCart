@@ -1,0 +1,122 @@
+[2017-05-11T13:13:27,500][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T13:13:27,568][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] using [1] data paths, mounts [[(C:)]], net usable_space [52.3gb], net total_space [111.2gb], spins? [unknown], types [NTFS]
+[2017-05-11T13:13:27,571][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T13:13:27,600][INFO ][o.e.n.Node               ] node name [ly3fOPr] derived from node ID [ly3fOPrvSF-PnYaSKymMYA]; set [node.name] to override
+[2017-05-11T13:13:27,603][INFO ][o.e.n.Node               ] version[5.3.2], pid[6200], build[3068195/2017-04-24T16:15:59.481Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_71/25.71-b15]
+[2017-05-11T13:13:28,189][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [aggs-matrix-stats]
+[2017-05-11T13:13:28,191][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [ingest-common]
+[2017-05-11T13:13:28,194][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-expression]
+[2017-05-11T13:13:28,196][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-groovy]
+[2017-05-11T13:13:28,198][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-mustache]
+[2017-05-11T13:13:28,199][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-painless]
+[2017-05-11T13:13:28,202][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [percolator]
+[2017-05-11T13:13:28,204][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [reindex]
+[2017-05-11T13:13:28,206][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty3]
+[2017-05-11T13:13:28,208][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty4]
+[2017-05-11T13:13:28,211][INFO ][o.e.p.PluginsService     ] [ly3fOPr] no plugins loaded
+[2017-05-11T13:13:30,011][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T13:13:30,012][INFO ][o.e.n.Node               ] [ly3fOPr] starting ...
+[2017-05-11T13:13:30,237][INFO ][o.e.t.TransportService   ] [ly3fOPr] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-05-11T13:13:33,279][INFO ][o.e.c.s.ClusterService   ] [ly3fOPr] new_master {ly3fOPr}{ly3fOPrvSF-PnYaSKymMYA}{GYgTfWelRgScI9Mp7S67xA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T13:13:33,339][INFO ][o.e.h.n.Netty4HttpServerTransport] [ly3fOPr] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-05-11T13:13:33,344][INFO ][o.e.n.Node               ] [ly3fOPr] started
+[2017-05-11T13:13:33,419][INFO ][o.e.g.GatewayService     ] [ly3fOPr] recovered [1] indices into cluster_state
+[2017-05-11T13:13:33,600][INFO ][o.e.c.r.a.AllocationService] [ly3fOPr] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[flashcart][1]] ...]).
+[2017-05-11T13:21:29,316][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T13:21:29,393][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] using [1] data paths, mounts [[(C:)]], net usable_space [52.3gb], net total_space [111.2gb], spins? [unknown], types [NTFS]
+[2017-05-11T13:21:29,396][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T13:21:29,424][INFO ][o.e.n.Node               ] node name [ly3fOPr] derived from node ID [ly3fOPrvSF-PnYaSKymMYA]; set [node.name] to override
+[2017-05-11T13:21:29,426][INFO ][o.e.n.Node               ] version[5.3.2], pid[7296], build[3068195/2017-04-24T16:15:59.481Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_71/25.71-b15]
+[2017-05-11T13:21:30,759][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [aggs-matrix-stats]
+[2017-05-11T13:21:30,761][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [ingest-common]
+[2017-05-11T13:21:30,763][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-expression]
+[2017-05-11T13:21:30,766][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-groovy]
+[2017-05-11T13:21:30,769][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-mustache]
+[2017-05-11T13:21:30,771][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-painless]
+[2017-05-11T13:21:30,773][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [percolator]
+[2017-05-11T13:21:30,775][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [reindex]
+[2017-05-11T13:21:30,777][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty3]
+[2017-05-11T13:21:30,779][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty4]
+[2017-05-11T13:21:30,782][INFO ][o.e.p.PluginsService     ] [ly3fOPr] no plugins loaded
+[2017-05-11T13:21:32,638][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T13:21:32,639][INFO ][o.e.n.Node               ] [ly3fOPr] starting ...
+[2017-05-11T13:21:32,858][INFO ][o.e.t.TransportService   ] [ly3fOPr] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-05-11T13:21:35,901][INFO ][o.e.c.s.ClusterService   ] [ly3fOPr] new_master {ly3fOPr}{ly3fOPrvSF-PnYaSKymMYA}{gWWwgmcBQNqA-g2JevvGBA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T13:21:35,960][INFO ][o.e.h.n.Netty4HttpServerTransport] [ly3fOPr] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-05-11T13:21:35,963][INFO ][o.e.n.Node               ] [ly3fOPr] started
+[2017-05-11T13:21:36,044][INFO ][o.e.g.GatewayService     ] [ly3fOPr] recovered [1] indices into cluster_state
+[2017-05-11T13:21:36,293][INFO ][o.e.c.r.a.AllocationService] [ly3fOPr] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[flashcart][4]] ...]).
+[2017-05-11T14:25:01,161][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T14:25:01,245][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] using [1] data paths, mounts [[(C:)]], net usable_space [52.3gb], net total_space [111.2gb], spins? [unknown], types [NTFS]
+[2017-05-11T14:25:01,249][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T14:25:01,280][INFO ][o.e.n.Node               ] node name [ly3fOPr] derived from node ID [ly3fOPrvSF-PnYaSKymMYA]; set [node.name] to override
+[2017-05-11T14:25:01,283][INFO ][o.e.n.Node               ] version[5.3.2], pid[7164], build[3068195/2017-04-24T16:15:59.481Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_71/25.71-b15]
+[2017-05-11T14:25:03,140][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [aggs-matrix-stats]
+[2017-05-11T14:25:03,142][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [ingest-common]
+[2017-05-11T14:25:03,143][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-expression]
+[2017-05-11T14:25:03,145][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-groovy]
+[2017-05-11T14:25:03,146][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-mustache]
+[2017-05-11T14:25:03,148][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-painless]
+[2017-05-11T14:25:03,150][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [percolator]
+[2017-05-11T14:25:03,151][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [reindex]
+[2017-05-11T14:25:03,152][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty3]
+[2017-05-11T14:25:03,154][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty4]
+[2017-05-11T14:25:03,156][INFO ][o.e.p.PluginsService     ] [ly3fOPr] no plugins loaded
+[2017-05-11T14:25:05,368][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T14:25:05,369][INFO ][o.e.n.Node               ] [ly3fOPr] starting ...
+[2017-05-11T14:25:05,684][INFO ][o.e.t.TransportService   ] [ly3fOPr] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-05-11T14:25:08,810][INFO ][o.e.c.s.ClusterService   ] [ly3fOPr] new_master {ly3fOPr}{ly3fOPrvSF-PnYaSKymMYA}{pvnZhU17SHmYIiRD1aQqJw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T14:25:08,881][INFO ][o.e.h.n.Netty4HttpServerTransport] [ly3fOPr] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-05-11T14:25:08,888][INFO ][o.e.n.Node               ] [ly3fOPr] started
+[2017-05-11T14:25:09,101][INFO ][o.e.g.GatewayService     ] [ly3fOPr] recovered [1] indices into cluster_state
+[2017-05-11T14:25:09,384][INFO ][o.e.c.r.a.AllocationService] [ly3fOPr] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[flashcart][0]] ...]).
+[2017-05-11T16:06:47,326][INFO ][o.e.c.m.MetaDataMappingService] [ly3fOPr] [flashcart/G6ulWiocS4yK1umsR_2SMg] create_mapping [view_products]
+[2017-05-11T16:06:47,335][INFO ][o.e.c.m.MetaDataMappingService] [ly3fOPr] [flashcart/G6ulWiocS4yK1umsR_2SMg] update_mapping [view_products]
+[2017-05-11T17:52:36,940][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T17:52:37,021][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] using [1] data paths, mounts [[(C:)]], net usable_space [52.4gb], net total_space [111.2gb], spins? [unknown], types [NTFS]
+[2017-05-11T17:52:37,024][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T17:52:37,052][INFO ][o.e.n.Node               ] node name [ly3fOPr] derived from node ID [ly3fOPrvSF-PnYaSKymMYA]; set [node.name] to override
+[2017-05-11T17:52:37,054][INFO ][o.e.n.Node               ] version[5.3.2], pid[1916], build[3068195/2017-04-24T16:15:59.481Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_71/25.71-b15]
+[2017-05-11T17:52:38,355][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [aggs-matrix-stats]
+[2017-05-11T17:52:38,357][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [ingest-common]
+[2017-05-11T17:52:38,358][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-expression]
+[2017-05-11T17:52:38,360][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-groovy]
+[2017-05-11T17:52:38,361][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-mustache]
+[2017-05-11T17:52:38,363][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-painless]
+[2017-05-11T17:52:38,364][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [percolator]
+[2017-05-11T17:52:38,366][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [reindex]
+[2017-05-11T17:52:38,367][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty3]
+[2017-05-11T17:52:38,369][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty4]
+[2017-05-11T17:52:38,371][INFO ][o.e.p.PluginsService     ] [ly3fOPr] no plugins loaded
+[2017-05-11T17:52:40,289][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T17:52:40,289][INFO ][o.e.n.Node               ] [ly3fOPr] starting ...
+[2017-05-11T17:52:40,505][INFO ][o.e.t.TransportService   ] [ly3fOPr] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-05-11T17:52:43,559][INFO ][o.e.c.s.ClusterService   ] [ly3fOPr] new_master {ly3fOPr}{ly3fOPrvSF-PnYaSKymMYA}{rpr1PCLhRfmWGaMvMpw42g}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T17:52:43,612][INFO ][o.e.h.n.Netty4HttpServerTransport] [ly3fOPr] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-05-11T17:52:43,628][INFO ][o.e.n.Node               ] [ly3fOPr] started
+[2017-05-11T17:52:43,712][INFO ][o.e.g.GatewayService     ] [ly3fOPr] recovered [1] indices into cluster_state
+[2017-05-11T17:52:43,959][INFO ][o.e.c.r.a.AllocationService] [ly3fOPr] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[flashcart][3]] ...]).
+[2017-05-11T20:06:59,560][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-05-11T20:06:59,623][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] using [1] data paths, mounts [[(C:)]], net usable_space [52.4gb], net total_space [111.2gb], spins? [unknown], types [NTFS]
+[2017-05-11T20:06:59,639][INFO ][o.e.e.NodeEnvironment    ] [ly3fOPr] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-05-11T20:06:59,654][INFO ][o.e.n.Node               ] node name [ly3fOPr] derived from node ID [ly3fOPrvSF-PnYaSKymMYA]; set [node.name] to override
+[2017-05-11T20:06:59,654][INFO ][o.e.n.Node               ] version[5.3.2], pid[7664], build[3068195/2017-04-24T16:15:59.481Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_71/25.71-b15]
+[2017-05-11T20:07:01,527][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [aggs-matrix-stats]
+[2017-05-11T20:07:01,528][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [ingest-common]
+[2017-05-11T20:07:01,528][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-expression]
+[2017-05-11T20:07:01,529][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-groovy]
+[2017-05-11T20:07:01,529][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-mustache]
+[2017-05-11T20:07:01,530][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [lang-painless]
+[2017-05-11T20:07:01,530][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [percolator]
+[2017-05-11T20:07:01,531][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [reindex]
+[2017-05-11T20:07:01,531][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty3]
+[2017-05-11T20:07:01,532][INFO ][o.e.p.PluginsService     ] [ly3fOPr] loaded module [transport-netty4]
+[2017-05-11T20:07:01,533][INFO ][o.e.p.PluginsService     ] [ly3fOPr] no plugins loaded
+[2017-05-11T20:07:06,778][INFO ][o.e.n.Node               ] initialized
+[2017-05-11T20:07:06,779][INFO ][o.e.n.Node               ] [ly3fOPr] starting ...
+[2017-05-11T20:07:07,058][INFO ][o.e.t.TransportService   ] [ly3fOPr] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2017-05-11T20:07:10,115][INFO ][o.e.c.s.ClusterService   ] [ly3fOPr] new_master {ly3fOPr}{ly3fOPrvSF-PnYaSKymMYA}{DRzYh7IRTUCy-NLXrZ2o1A}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-05-11T20:07:10,188][INFO ][o.e.h.n.Netty4HttpServerTransport] [ly3fOPr] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2017-05-11T20:07:10,191][INFO ][o.e.n.Node               ] [ly3fOPr] started
+[2017-05-11T20:07:10,278][INFO ][o.e.g.GatewayService     ] [ly3fOPr] recovered [1] indices into cluster_state
+[2017-05-11T20:07:10,739][INFO ][o.e.c.r.a.AllocationService] [ly3fOPr] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[flashcart][1]] ...]).
